@@ -1,13 +1,18 @@
 package com.marianoop.java_crud.utils;
 
+
 import com.marianoop.java_crud.domain.Author;
 import com.marianoop.java_crud.domain.Book;
 
 public class TestDataUtil {
     public static Author anyTestAuthor() {
+        return anyTestAuthor(72);
+    }
+
+    public static Author anyTestAuthor(int age) {
         return Author.builder()
                 .name("Jorge Luis")
-                .age(72)
+                .age(age)
                 .build();
     }
 

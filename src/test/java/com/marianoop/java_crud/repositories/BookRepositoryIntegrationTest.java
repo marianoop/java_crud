@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import com.marianoop.java_crud.domain.Author;
 import com.marianoop.java_crud.domain.Book;
 import com.marianoop.java_crud.utils.TestDataUtil;
-import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -50,7 +49,7 @@ public class BookRepositoryIntegrationTest {
         Book bookA = sut.save(anyTestBookA(author));
         Book bookB = sut.save(anyTestBookB(author));
 
-        List<Book> result = sut.findAll();
+        Iterable<Book> result = sut.findAll();
 
         assertThat(result)
                 .hasSize(2)

@@ -47,7 +47,7 @@ public class AuthorRepositoryIntegrationTest {
         sut.save(authorA);
         sut.save(authorB);
 
-        List<Author> result = sut.findAll();
+        Iterable<Author> result = sut.findAll();
 
         assertThat(result)
                 .hasSize(2)
@@ -80,5 +80,22 @@ public class AuthorRepositoryIntegrationTest {
         Optional<Author> result = sut.findById(author.getId());
 
         assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void findByAgeLessThan_Ok() {
+        Author authorA = TestDataUtil.anyTestAuthor(20);
+        Author authorB = TestDataUtil.anyTestAuthor(35);
+        Author authorC = TestDataUtil.anyTestAuthor(45);
+
+        sut.save(authorA);
+        sut.save(authorB);
+        sut.save(authorC);
+
+        List<Author> result = sut.findByAgeLessThan(40);
+
+        assertThat(result)
+                .hasSize(2)
+                .containsExactly(authorA, authorB);
     }
 }
