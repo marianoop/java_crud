@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>com.marianoop</groupId>
-	<artifactId>java_crud</artifactId>
+	<artifactId>library</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>java_crud</name>
-	<description>Java Crud App</description>
+	<name>library</name>
+	<description>Library API</description>
 	<url/>
 	<licenses>
 		<license/>
