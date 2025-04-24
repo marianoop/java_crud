@@ -1,4 +1,4 @@
-package com.marianoop.java_crud.domain;
+package com.marianoop.java_crud.domain.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

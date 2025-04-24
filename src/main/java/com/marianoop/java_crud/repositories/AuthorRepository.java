@@ -1,6 +1,6 @@
 package com.marianoop.java_crud.repositories;
 
-import com.marianoop.java_crud.domain.Author;
+import com.marianoop.java_crud.domain.entities.Author;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

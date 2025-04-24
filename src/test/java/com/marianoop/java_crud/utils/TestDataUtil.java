@@ -1,8 +1,8 @@
 package com.marianoop.java_crud.utils;
 
 
-import com.marianoop.java_crud.domain.Author;
-import com.marianoop.java_crud.domain.Book;
+import com.marianoop.java_crud.domain.entities.Author;
+import com.marianoop.java_crud.domain.entities.Book;
 
 public class TestDataUtil {
     public static Author anyTestAuthor() {

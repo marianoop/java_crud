@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.marianoop.java_crud.domain.Author;
+import com.marianoop.java_crud.domain.entities.Author;
 import com.marianoop.java_crud.utils.TestDataUtil;
 import java.util.List;
 import java.util.Optional;
